@@ -1,0 +1,19 @@
+overlays:
+  4K:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    overlay:
+        name: 4K
+        file: config/overlays/4K/overlay.png
+    schedule: daily
+  4K-HDR:
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    overlay:
+        name: 4K-HDR 
+        file: config/overlays/4K-HDR/overlay.png
+    schedule: daily

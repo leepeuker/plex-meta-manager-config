@@ -1,0 +1,3 @@
+config/*
+!config/movies.yml
+!config/overlays-movies4k.yml

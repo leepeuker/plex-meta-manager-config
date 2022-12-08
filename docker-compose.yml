@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  plex-meta-manager:
+    image: meisnate12/plex-meta-manager
+    container_name: plex-meta-manager
+    volumes:
+      - ./config:/config
+    restart: unless-stopped

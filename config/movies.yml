@@ -1,0 +1,101 @@
+templates:
+  title:
+    sort_title: +++++++<<num>><<collection_name>>
+
+collections:
+  Trending This Week:
+    template: { name: title, num: 1 }
+    collection_order: custom
+    sync_mode: sync
+    imdb_chart: popular_movies
+    file_poster: /config/posters/Trending Movies.jpeg
+    summary: Trending across the internet
+    visible_library: true
+    visible_shared: true
+
+  Best of all Time:
+    template: { name: title, num: 2 }
+    imdb_chart: top_movies
+    collection_order: custom
+    sync_mode: sync
+    summary: Best rated movies of all time (IMDB)
+    file_poster: /config/posters/decades/All Time.png
+    schedule: weekly(sunday)
+
+  Best of 2020s:
+    template: { name: title, num: 20 }
+    imdb_list:
+      url: https://www.imdb.com/search/title/?groups=top_1000&sort=user_rating,desc&release_date=2020-01-01,2029-12-31
+      limit: 150
+    collection_order: custom
+    sync_mode: sync
+    summary: Best rated movies of the 2020s (IMDB).
+    file_poster: /config/posters/decades/2020.png
+    schedule: weekly(sunday)
+
+  Best of 2010s:
+    template: { name: title, num: 21 }
+    imdb_list:
+      url: https://www.imdb.com/search/title/?groups=top_1000&sort=user_rating,desc&release_date=2010-01-01,2019-12-31
+      limit: 150
+    collection_order: custom
+    sync_mode: sync
+    summary: Best rated movies of the 2010s (IMDB).
+    file_poster: /config/posters/decades/2010.png
+    schedule: weekly(sunday)
+
+  Best of 2000s:
+    template: { name: title, num: 22 }
+    imdb_list:
+      url: https://www.imdb.com/search/title/?groups=top_1000&sort=user_rating,desc&release_date=2000-01-01,2009-12-31
+      limit: 150
+    collection_order: custom
+    sync_mode: sync
+    summary: Best rated movies of the 2000s (IMDB).
+    file_poster: /config/posters/decades/2000.png
+    schedule: weekly(sunday)
+
+  Best of 1990s:
+    template: { name: title, num: 23 }
+    imdb_list:
+      url: https://www.imdb.com/search/title/?groups=top_1000&sort=user_rating,desc&release_date=1990-01-01,1999-12-31
+      limit: 150
+    collection_order: custom
+    sync_mode: sync
+    summary: Best rated movies of the 1990s (IMDB).
+    file_poster: /config/posters/decades/1990.png
+    schedule: weekly(sunday)
+
+  Best of 1980s:
+    template: { name: title, num: 24 }
+    imdb_list:
+      url: https://www.imdb.com/search/title/?groups=top_1000&sort=user_rating,desc&release_date=1980-01-01,1989-12-31
+      limit: 150
+    collection_order: custom
+    sync_mode: sync
+    summary: Best rated movies of the 1980s (IMDB).
+    file_poster: /config/posters/decades/1980.png
+    schedule: weekly(sunday)
+
+  Best of 1970s:
+    template: { name: title, num: 25 }
+    imdb_list:
+      url: https://www.imdb.com/search/title/?groups=top_1000&sort=user_rating,desc&release_date=1970-01-01,1979-12-31
+      limit: 150
+    collection_order: custom
+    sync_mode: sync
+    summary: Best rated movies of the 1970s (IMDB).
+    file_poster: /config/posters/decades/1970.png
+    schedule: weekly(sunday)
+
+
+  Best of 1960s:
+    template: { name: title, num: 26 }
+    imdb_list:
+      url: https://www.imdb.com/search/title/?groups=top_1000&sort=user_rating,desc&release_date=1960-01-01,1969-12-31
+      limit: 150
+    collection_order: custom
+    sync_mode: sync
+    summary: Best rated movies of the 1960s (IMDB).
+    file_poster: /config/posters/decades/1960.png
+    schedule: weekly(sunday)
